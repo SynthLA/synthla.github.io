@@ -29,11 +29,9 @@
             Zero-Shot Real-World Robot Control via a Synthetic-Data Language–Action Model
           </p>
           <div class="d-flex flex-wrap gap-2">
-            <!-- Update to your actual PDF path -->
             <a class="btn btn-primary btn-lg" href="./assets/paper/SynthLA.pdf" target="_blank" rel="noopener">
               Read the Paper (PDF)
             </a>
-            <!-- Update to your actual YouTube link -->
             <a class="btn btn-outline-secondary btn-lg" href="https://www.youtube.com/" target="_blank" rel="noopener">
               More Videos on YouTube
             </a>
@@ -43,12 +41,10 @@
     </div>
   </header>
 
-  <!-- Hero image (same width as body, no overlay text) -->
+  <!-- Hero image (body width, no overlay text) -->
   <section class="py-4">
     <div class="container">
-      <!-- Replace with your image path -->
       <img src="./assets/hero/hero.jpg" class="img-fluid rounded-3 shadow-sm hero-body-width" alt="SynthLA hero image">
-      <!-- Editable text BELOW the image -->
       <div class="mt-3">
         <h2 class="h4 mb-2">Edit this headline later</h2>
         <p class="mb-0 text-secondary">
@@ -68,34 +64,35 @@
             <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
 
             <div class="carousel-wrap mx-auto">
-              <div id="carousel-pnp" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carousel-pnp" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carousel-pnp" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carousel-pnp" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+              <!-- Only arrows can move slides; no autoplay, no touch/keyboard -->
+              <div id="carousel-pnp" class="carousel slide"
+                   data-bs-ride="false" data-bs-interval="false"
+                   data-bs-touch="false" data-bs-keyboard="false" data-bs-wrap="true">
                 <div class="carousel-inner rounded-3 overflow-hidden">
                   <div class="carousel-item active d-grid">
-                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pnp1.jpg">
+                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/pnp1.jpg">
                       <source src="./assets/videos/pick-and-place/pnp1.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
                     </video>
                   </div>
                   <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pnp2.jpg">
+                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/pnp2.jpg">
                       <source src="./assets/videos/pick-and-place/pnp2.mp4" type="video/mp4">
                     </video>
                   </div>
                   <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pnp3.jpg">
+                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/pnp3.jpg">
                       <source src="./assets/videos/pick-and-place/pnp3.mp4" type="video/mp4">
                     </video>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pnp" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carousel-pnp" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
                 </button>
               </div>
             </div>
@@ -114,34 +111,33 @@
             <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
 
             <div class="carousel-wrap mx-auto">
-              <div id="carousel-lift" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carousel-lift" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carousel-lift" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carousel-lift" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+              <div id="carousel-lift" class="carousel slide"
+                   data-bs-ride="false" data-bs-interval="false"
+                   data-bs-touch="false" data-bs-keyboard="false" data-bs-wrap="true">
                 <div class="carousel-inner rounded-3 overflow-hidden">
                   <div class="carousel-item active d-grid">
-                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/lift1.jpg">
+                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/lift1.jpg">
                       <source src="./assets/videos/lift/lift1.mp4" type="video/mp4">
                     </video>
                   </div>
                   <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/lift2.jpg">
+                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/lift2.jpg">
                       <source src="./assets/videos/lift/lift2.mp4" type="video/mp4">
                     </video>
                   </div>
                   <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/lift3.jpg">
+                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/lift3.jpg">
                       <source src="./assets/videos/lift/lift3.mp4" type="video/mp4">
                     </video>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel-lift" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carousel-lift" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
                 </button>
               </div>
             </div>
@@ -160,34 +156,33 @@
             <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
 
             <div class="carousel-wrap mx-auto">
-              <div id="carousel-move" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carousel-move" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carousel-move" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carousel-move" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+              <div id="carousel-move" class="carousel slide"
+                   data-bs-ride="false" data-bs-interval="false"
+                   data-bs-touch="false" data-bs-keyboard="false" data-bs-wrap="true">
                 <div class="carousel-inner rounded-3 overflow-hidden">
                   <div class="carousel-item active d-grid">
-                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/move1.jpg">
+                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/move1.jpg">
                       <source src="./assets/videos/move/move1.mp4" type="video/mp4">
                     </video>
                   </div>
                   <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/move2.jpg">
+                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/move2.jpg">
                       <source src="./assets/videos/move/move2.mp4" type="video/mp4">
                     </video>
                   </div>
                   <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/move3.jpg">
+                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/move3.jpg">
                       <source src="./assets/videos/move/move3.mp4" type="video/mp4">
                     </video>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel-move" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carousel-move" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
                 </button>
               </div>
             </div>
@@ -206,34 +201,33 @@
             <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
 
             <div class="carousel-wrap mx-auto">
-              <div id="carousel-pot" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carousel-pot" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carousel-pot" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carousel-pot" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+              <div id="carousel-pot" class="carousel slide"
+                   data-bs-ride="false" data-bs-interval="false"
+                   data-bs-touch="false" data-bs-keyboard="false" data-bs-wrap="true">
                 <div class="carousel-inner rounded-3 overflow-hidden">
                   <div class="carousel-item active d-grid">
-                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pot1.jpg">
+                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/pot1.jpg">
                       <source src="./assets/videos/close-the-pot/pot1.mp4" type="video/mp4">
                     </video>
                   </div>
                   <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pot2.jpg">
+                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/pot2.jpg">
                       <source src="./assets/videos/close-the-pot/pot2.mp4" type="video/mp4">
                     </video>
                   </div>
                   <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pot3.jpg">
+                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/pot3.jpg">
                       <source src="./assets/videos/close-the-pot/pot3.mp4" type="video/mp4">
                     </video>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pot" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carousel-pot" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
                 </button>
               </div>
             </div>
@@ -258,21 +252,13 @@
     crossorigin="anonymous">
   </script>
 
-  <!-- Pause other videos on slide change; play active after transition -->
+  <!-- Ensure videos pause when changing slides (belt & suspenders) -->
   <script>
     document.querySelectorAll('.carousel').forEach(carousel => {
-      // Pause all videos when leaving a slide
       carousel.addEventListener('slide.bs.carousel', () => {
         carousel.querySelectorAll('video').forEach(v => v.pause());
       });
-      // Auto-play the active slide's video
-      carousel.addEventListener('slid.bs.carousel', () => {
-        const activeVid = carousel.querySelector('.carousel-item.active video');
-        if (activeVid) activeVid.play().catch(()=>{});
-      });
     });
-
-    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
