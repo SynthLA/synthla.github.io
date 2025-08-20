@@ -23,7 +23,7 @@
   <header class="py-5 border-bottom bg-gradient">
     <div class="container">
       <div class="row align-items-center g-4">
-        <div class="col-12 col-lg-8">
+        <div class="col-12 col-lg-10">
           <h1 class="display-5 fw-bold mb-2">SynthLA</h1>
           <p class="lead text-secondary mb-4">
             Zero-Shot Real-World Robot Control via a Synthetic-Data Language–Action Model
@@ -43,33 +43,31 @@
     </div>
   </header>
 
-  <!-- Fullscreen hero image with overlay text (edit the copy later) -->
-  <section class="hero-section position-relative">
-    <!-- Replace with your image path -->
-    <img src="./assets/hero/hero.jpg" class="hero-img" alt="SynthLA hero image">
-    <div class="hero-overlay"></div>
-    <div class="hero-content container">
-      <div class="row">
-        <div class="col-12 col-lg-8">
-          <h2 class="display-6 fw-semibold">Edit this headline later</h2>
-          <p class="fs-5 text-light-50 mb-0">
-            Add a short paragraph describing the main contribution, setup, or results. Keep it to 1–2 lines for clarity.
-          </p>
-        </div>
+  <!-- Hero image (same width as body, no overlay text) -->
+  <section class="py-4">
+    <div class="container">
+      <!-- Replace with your image path -->
+      <img src="./assets/hero/hero.jpg" class="img-fluid rounded-3 shadow-sm hero-body-width" alt="SynthLA hero image">
+      <!-- Editable text BELOW the image -->
+      <div class="mt-3">
+        <h2 class="h4 mb-2">Edit this headline later</h2>
+        <p class="mb-0 text-secondary">
+          Add a short paragraph describing the main contribution, setup, or results. Keep it to 1–2 lines for clarity.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- 2x2 Sections -->
-  <main class="py-5">
-    <div class="container">
+  <main>
+    <!-- Pick and Place -->
+    <section class="py-5 border-top">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <h3 class="h4 mb-2">Pick and Place</h3>
+            <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
 
-      <div class="row g-4">
-        <!-- Pick and Place -->
-        <div class="col-12 col-md-6">
-          <div class="card shadow-sm h-100">
-            <div class="card-body">
-              <h3 class="h5 mb-3">Pick and Place</h3>
+            <div class="carousel-wrap mx-auto">
               <div id="carousel-pnp" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carousel-pnp" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -77,29 +75,20 @@
                   <button type="button" data-bs-target="#carousel-pnp" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner rounded-3 overflow-hidden">
-                  <div class="carousel-item active">
-                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pnp1.jpg">
+                  <div class="carousel-item active d-grid">
+                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pnp1.jpg">
                       <source src="./assets/videos/pick-and-place/pnp1.mp4" type="video/mp4">
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                      <p class="small">Pick &amp; Place — trial 1</p>
-                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pnp2.jpg">
+                  <div class="carousel-item d-grid">
+                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pnp2.jpg">
                       <source src="./assets/videos/pick-and-place/pnp2.mp4" type="video/mp4">
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                      <p class="small">Pick &amp; Place — trial 2</p>
-                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pnp3.jpg">
+                  <div class="carousel-item d-grid">
+                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pnp3.jpg">
                       <source src="./assets/videos/pick-and-place/pnp3.mp4" type="video/mp4">
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                      <p class="small">Pick &amp; Place — trial 3</p>
-                    </div>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pnp" data-bs-slide="prev">
@@ -110,14 +99,21 @@
                 </button>
               </div>
             </div>
+
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Lift -->
-        <div class="col-12 col-md-6">
-          <div class="card shadow-sm h-100">
-            <div class="card-body">
-              <h3 class="h5 mb-3">Lift</h3>
+    <!-- Lift -->
+    <section class="py-5 border-top">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <h3 class="h4 mb-2">Lift</h3>
+            <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
+
+            <div class="carousel-wrap mx-auto">
               <div id="carousel-lift" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carousel-lift" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -125,29 +121,20 @@
                   <button type="button" data-bs-target="#carousel-lift" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner rounded-3 overflow-hidden">
-                  <div class="carousel-item active">
-                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/lift1.jpg">
+                  <div class="carousel-item active d-grid">
+                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/lift1.jpg">
                       <source src="./assets/videos/lift/lift1.mp4" type="video/mp4">
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                      <p class="small">Lift — trial 1</p>
-                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/lift2.jpg">
+                  <div class="carousel-item d-grid">
+                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/lift2.jpg">
                       <source src="./assets/videos/lift/lift2.mp4" type="video/mp4">
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                      <p class="small">Lift — trial 2</p>
-                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/lift3.jpg">
+                  <div class="carousel-item d-grid">
+                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/lift3.jpg">
                       <source src="./assets/videos/lift/lift3.mp4" type="video/mp4">
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                      <p class="small">Lift — trial 3</p>
-                    </div>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel-lift" data-bs-slide="prev">
@@ -158,14 +145,21 @@
                 </button>
               </div>
             </div>
+
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Move -->
-        <div class="col-12 col-md-6">
-          <div class="card shadow-sm h-100">
-            <div class="card-body">
-              <h3 class="h5 mb-3">Move</h3>
+    <!-- Move -->
+    <section class="py-5 border-top">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <h3 class="h4 mb-2">Move</h3>
+            <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
+
+            <div class="carousel-wrap mx-auto">
               <div id="carousel-move" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carousel-move" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -173,29 +167,20 @@
                   <button type="button" data-bs-target="#carousel-move" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner rounded-3 overflow-hidden">
-                  <div class="carousel-item active">
-                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/move1.jpg">
+                  <div class="carousel-item active d-grid">
+                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/move1.jpg">
                       <source src="./assets/videos/move/move1.mp4" type="video/mp4">
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                      <p class="small">Move — trial 1</p>
-                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/move2.jpg">
+                  <div class="carousel-item d-grid">
+                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/move2.jpg">
                       <source src="./assets/videos/move/move2.mp4" type="video/mp4">
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                      <p class="small">Move — trial 2</p>
-                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/move3.jpg">
+                  <div class="carousel-item d-grid">
+                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/move3.jpg">
                       <source src="./assets/videos/move/move3.mp4" type="video/mp4">
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                      <p class="small">Move — trial 3</p>
-                    </div>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel-move" data-bs-slide="prev">
@@ -206,14 +191,21 @@
                 </button>
               </div>
             </div>
+
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Close the Pot -->
-        <div class="col-12 col-md-6">
-          <div class="card shadow-sm h-100">
-            <div class="card-body">
-              <h3 class="h5 mb-3">Close the Pot</h3>
+    <!-- Close the Pot -->
+    <section class="py-5 border-top">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <h3 class="h4 mb-2">Close the Pot</h3>
+            <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
+
+            <div class="carousel-wrap mx-auto">
               <div id="carousel-pot" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carousel-pot" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -221,29 +213,20 @@
                   <button type="button" data-bs-target="#carousel-pot" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner rounded-3 overflow-hidden">
-                  <div class="carousel-item active">
-                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pot1.jpg">
+                  <div class="carousel-item active d-grid">
+                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pot1.jpg">
                       <source src="./assets/videos/close-the-pot/pot1.mp4" type="video/mp4">
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                      <p class="small">Close the Pot — trial 1</p>
-                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pot2.jpg">
+                  <div class="carousel-item d-grid">
+                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pot2.jpg">
                       <source src="./assets/videos/close-the-pot/pot2.mp4" type="video/mp4">
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                      <p class="small">Close the Pot — trial 2</p>
-                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pot3.jpg">
+                  <div class="carousel-item d-grid">
+                    <video class="w-100 rounded-3" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pot3.jpg">
                       <source src="./assets/videos/close-the-pot/pot3.mp4" type="video/mp4">
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                      <p class="small">Close the Pot — trial 3</p>
-                    </div>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pot" data-bs-slide="prev">
@@ -254,12 +237,12 @@
                 </button>
               </div>
             </div>
+
           </div>
         </div>
+      </div>
+    </section>
 
-      </div><!-- /.row -->
-
-    </div><!-- /.container -->
   </main>
 
   <footer class="py-4 border-top">
@@ -275,18 +258,17 @@
     crossorigin="anonymous">
   </script>
 
-  <!-- Small enhancement: pause other videos when slide changes -->
+  <!-- Pause other videos on slide change; play active after transition -->
   <script>
     document.querySelectorAll('.carousel').forEach(carousel => {
-      carousel.addEventListener('slide.bs.carousel', (e) => {
-        // Pause all videos in the outgoing slide
-        const leaving = e.relatedTarget?.parentElement?.querySelector('.carousel-item.active');
-        (leaving || carousel).querySelectorAll('video').forEach(v => v.pause());
+      // Pause all videos when leaving a slide
+      carousel.addEventListener('slide.bs.carousel', () => {
+        carousel.querySelectorAll('video').forEach(v => v.pause());
       });
-      carousel.addEventListener('slid.bs.carousel', (e) => {
-        // Ensure the current slide's video is playing
-        const active = carousel.querySelector('.carousel-item.active video');
-        if (active) active.play().catch(()=>{});
+      // Auto-play the active slide's video
+      carousel.addEventListener('slid.bs.carousel', () => {
+        const activeVid = carousel.querySelector('.carousel-item.active video');
+        if (activeVid) activeVid.play().catch(()=>{});
       });
     });
 
