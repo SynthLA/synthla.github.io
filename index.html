@@ -29,26 +29,53 @@
     </div>
   </header>
 
+
+
+
   <!-- Hero -->
   <section class="py-4">
     <div class="container">
-      <img src="./assets/hero/hero.jpg" class="img-fluid rounded-3 shadow-sm hero-body-width" alt="SynthLA hero image">
       <div class="mt-3">
-        <h2 class="h4 mb-2">Edit this headline later</h2>
-        <p class="mb-0 text-secondary">Add a short paragraph describing the main contribution, setup, or results.</p>
+        <img src="./assets/hero/hero.jpg" class="img-fluid rounded-3 shadow-sm hero-body-width" alt="SynthLA hero image">
+        <br>
+        <p class="mb-0 text-secondary">Overview of SynthLA. The vision module converts scene images into structured textual descriptions, which are combined with the robot state and user instructions. SynthLA then generates the next low-level robot action.</p>
       </div>
     </div>
   </section>
 
   <main>
+
     <!-- Pick and Place -->
     <section class="py-5 border-top">
+
       <div class="container">
+        <h1 class="h4 mb-4">Qualitative Experiments</h1>
+        <p>
+          We evaluate SynthLA in real-world scenarios under two conditions. In the
+          <em>static</em> setting, the scene remains unchanged during inference. In the
+          <em>dynamic</em> setting, objects may be displaced or new elements introduced during
+          execution. For both conditions, we consider two data regimes:
+          <em>in-distribution (ID)</em>, where all objects were present in the fine-tuning dataset,
+          and <em>out-of-distribution (OOD)</em>, where the model encounters novel objects.
+        </p>
+        <p>The experimental evaluation addresses the following research questions:</p>
+        <ol>
+          <li>
+            How does SynthLA compare with a state-of-the-art (SOTA) vision–language–action (VLA)
+            model across benchmark tasks? In particular, how does performance differ between ID and
+            OOD conditions?
+          </li>
+          <li>How does performance scale with SynthLA's parameter size?</li>
+          <li>
+            How does SynthLA’s performance on a specific task scale with the number of tasks it has
+            been trained on?
+          </li>
+        </ol>
         <h3 class="h4 mb-4">Pick and Place</h3>
 
         <!-- Trial 1 -->
         <div class="subsec mb-5 text-center">
-          <h4 class="h6">Trial 1</h4>
+          <h4 class="h6">In-distribution and static environment</h4>
           <div class="video-center">
             <video class="rounded-3 shadow-sm" controls preload="metadata" poster="./assets/thumbnails/pnp1.jpg">
               <source src="./assets/videos/pick-and-place/pnp1.mp4" type="video/mp4">
@@ -59,7 +86,7 @@
 
         <!-- Trial 2 -->
         <div class="subsec mb-5 text-center">
-          <h4 class="h6">Trial 2</h4>
+          <h4 class="h6">In-distribution and dynamic environment</h4>
           <div class="video-center">
             <video class="rounded-3 shadow-sm" controls preload="metadata" poster="./assets/thumbnails/pnp2.jpg">
               <source src="./assets/videos/pick-and-place/pnp2.mp4" type="video/mp4">
@@ -70,7 +97,7 @@
 
         <!-- Trial 3 -->
         <div class="subsec mb-5 text-center">
-          <h4 class="h6">Trial 3</h4>
+          <h4 class="h6">Out-of-distribution and dynamic environment</h4>
           <div class="video-center">
             <video class="rounded-3 shadow-sm" controls preload="metadata" poster="./assets/thumbnails/pnp3.jpg">
               <source src="./assets/videos/pick-and-place/pnp3.mp4" type="video/mp4">
@@ -87,7 +114,7 @@
         <h3 class="h4 mb-4">Lift</h3>
 
         <div class="subsec mb-5 text-center">
-          <h4 class="h6">Trial 1</h4>
+          <h4 class="h6">In-distribution and static environment</h4>
           <div class="video-center">
             <video class="rounded-3 shadow-sm" controls preload="metadata" poster="./assets/thumbnails/lift1.jpg">
               <source src="./assets/videos/lift/lift1.mp4" type="video/mp4">
@@ -97,7 +124,7 @@
         </div>
 
         <div class="subsec mb-5 text-center">
-          <h4 class="h6">Trial 2</h4>
+          <h4 class="h6">In-distribution and dynamic environment</h4>
           <div class="video-center">
             <video class="rounded-3 shadow-sm" controls preload="metadata" poster="./assets/thumbnails/lift2.jpg">
               <source src="./assets/videos/lift/lift2.mp4" type="video/mp4">
@@ -107,7 +134,7 @@
         </div>
 
         <div class="subsec mb-5 text-center">
-          <h4 class="h6">Trial 3</h4>
+          <h4 class="h6">Out-of-distribution and dynamic environment</h4>
           <div class="video-center">
             <video class="rounded-3 shadow-sm" controls preload="metadata" poster="./assets/thumbnails/lift3.jpg">
               <source src="./assets/videos/lift/lift3.mp4" type="video/mp4">
