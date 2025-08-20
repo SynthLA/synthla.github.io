@@ -1,4 +1,3 @@
-/* Minimal, clean look with light/dark awareness */
 :root {
   --bg: #0b0b0c;
   --fg: #e9e9ea;
@@ -6,6 +5,7 @@
   --card: #141417;
   --border: #212125;
   --accent: #4b9cff;
+  --video-max: 720px; /* max width for videos */
 }
 
 @media (prefers-color-scheme: light) {
@@ -20,7 +20,6 @@
 }
 
 html, body {
-  height: 100%;
   background: var(--bg);
   color: var(--fg);
 }
@@ -35,32 +34,22 @@ html, body {
   background-color: var(--accent);
   border-color: color-mix(in oklab, var(--accent), black 12%);
 }
-.btn-primary:hover { filter: brightness(1.05); }
-
 .btn-outline-secondary { color: var(--fg); border-color: var(--border); }
-.btn-outline-secondary:hover { background: rgba(255,255,255,0.06); }
 
 .hero-body-width {
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: cover;
   border-radius: 1rem;
 }
 
-/* Subsection cards */
-.subcard {
-  background: var(--card);
-  border: 1px solid var(--border);
+/* Center and constrain videos */
+.video-center {
+  display: flex;
+  justify-content: center;
 }
-
-/* 16:9 videos everywhere */
-.video-16x9 {
+.video-center video {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: var(--video-max);
+  height: auto;
   background: #000;
 }
-
-/* Small polish */
-footer { color: var(--muted); }
