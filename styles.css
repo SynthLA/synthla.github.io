@@ -6,7 +6,6 @@
   --card: #141417;
   --border: #212125;
   --accent: #4b9cff;
-  --carousel-max: 720px; /* keep the same apparent width as before */
 }
 
 @media (prefers-color-scheme: light) {
@@ -32,27 +31,15 @@ html, body {
 
 .lead { color: var(--muted) !important; }
 
-/* Buttons */
 .btn-primary {
   background-color: var(--accent);
   border-color: color-mix(in oklab, var(--accent), black 12%);
 }
 .btn-primary:hover { filter: brightness(1.05); }
-.btn-outline-secondary {
-  color: var(--fg);
-  border-color: var(--border);
-}
-.btn-outline-secondary:hover {
-  background: rgba(255,255,255,0.06);
-}
 
-/* Cards (only if you add any) */
-.card {
-  background: var(--card);
-  border-color: var(--border);
-}
+.btn-outline-secondary { color: var(--fg); border-color: var(--border); }
+.btn-outline-secondary:hover { background: rgba(255,255,255,0.06); }
 
-/* Hero image should follow main body width */
 .hero-body-width {
   display: block;
   width: 100%;
@@ -61,30 +48,19 @@ html, body {
   border-radius: 1rem;
 }
 
-/* Centered carousel wrapper with fixed max width and 16:9 media */
-.carousel-wrap {
-  max-width: var(--carousel-max);
+/* Subsection cards */
+.subcard {
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+/* 16:9 videos everywhere */
+.video-16x9 {
   width: 100%;
-}
-
-/* Use a grid to ensure the video fills the slide cleanly */
-.carousel-item.d-grid {
-  display: grid !important;
-}
-
-/* Video sizing: keep consistent dimensions/aspect as before */
-.carousel-item video {
-  background: #000;
-  aspect-ratio: 16 / 9;
+  height: 100%;
   object-fit: cover;
-  width: 100%;
-  height: auto;
+  background: #000;
 }
 
-/* Polishing */
+/* Small polish */
 footer { color: var(--muted); }
-
-/* Optional: reduce indicator size slightly */
-.carousel-indicators [data-bs-target] {
-  width: 8px; height: 8px; border-radius: 50%;
-}
