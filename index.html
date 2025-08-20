@@ -13,8 +13,6 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
   />
-
-  <!-- Custom styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -41,7 +39,7 @@
     </div>
   </header>
 
-  <!-- Hero image (body width, no overlay text) -->
+  <!-- Hero image (body-width) + text below -->
   <section class="py-4">
     <div class="container">
       <img src="./assets/hero/hero.jpg" class="img-fluid rounded-3 shadow-sm hero-body-width" alt="SynthLA hero image">
@@ -55,185 +53,184 @@
   </section>
 
   <main>
-    <!-- Pick and Place -->
+
+    <!-- ===== Pick & Place ===== -->
     <section class="py-5 border-top">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-10">
-            <h3 class="h4 mb-2">Pick and Place</h3>
-            <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
+        <h3 class="h4 mb-2">Pick and Place</h3>
+        <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
 
-            <div class="carousel-wrap mx-auto">
-              <!-- Only arrows can move slides; no autoplay, no touch/keyboard -->
-              <div id="carousel-pnp" class="carousel slide"
-                   data-bs-ride="false" data-bs-interval="false"
-                   data-bs-touch="false" data-bs-keyboard="false" data-bs-wrap="true">
-                <div class="carousel-inner rounded-3 overflow-hidden">
-                  <div class="carousel-item active d-grid">
-                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/pnp1.jpg">
-                      <source src="./assets/videos/pick-and-place/pnp1.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/pnp2.jpg">
-                      <source src="./assets/videos/pick-and-place/pnp2.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/pnp3.jpg">
-                      <source src="./assets/videos/pick-and-place/pnp3.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pnp" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-pnp" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+        <div class="row g-4">
+          <!-- Sub 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="subcard p-3 rounded-3 shadow-sm h-100">
+              <h4 class="h6 mb-2">Trial 1</h4>
+              <p class="small text-secondary">Replace this with notes about the attempt/scene setup.</p>
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <video class="video-16x9" controls preload="metadata" poster="./assets/thumbnails/pnp1.jpg">
+                  <source src="./assets/videos/pick-and-place/pnp1.mp4" type="video/mp4">
+                </video>
               </div>
             </div>
-
+          </div>
+          <!-- Sub 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="subcard p-3 rounded-3 shadow-sm h-100">
+              <h4 class="h6 mb-2">Trial 2</h4>
+              <p class="small text-secondary">Replace this with notes about the attempt/scene setup.</p>
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <video class="video-16x9" controls preload="metadata" poster="./assets/thumbnails/pnp2.jpg">
+                  <source src="./assets/videos/pick-and-place/pnp2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <!-- Sub 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="subcard p-3 rounded-3 shadow-sm h-100">
+              <h4 class="h6 mb-2">Trial 3</h4>
+              <p class="small text-secondary">Replace this with notes about the attempt/scene setup.</p>
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <video class="video-16x9" controls preload="metadata" poster="./assets/thumbnails/pnp3.jpg">
+                  <source src="./assets/videos/pick-and-place/pnp3.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Lift -->
+    <!-- ===== Lift ===== -->
     <section class="py-5 border-top">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-10">
-            <h3 class="h4 mb-2">Lift</h3>
-            <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
+        <h3 class="h4 mb-2">Lift</h3>
+        <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
 
-            <div class="carousel-wrap mx-auto">
-              <div id="carousel-lift" class="carousel slide"
-                   data-bs-ride="false" data-bs-interval="false"
-                   data-bs-touch="false" data-bs-keyboard="false" data-bs-wrap="true">
-                <div class="carousel-inner rounded-3 overflow-hidden">
-                  <div class="carousel-item active d-grid">
-                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/lift1.jpg">
-                      <source src="./assets/videos/lift/lift1.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/lift2.jpg">
-                      <source src="./assets/videos/lift/lift2.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/lift3.jpg">
-                      <source src="./assets/videos/lift/lift3.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-lift" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-lift" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="subcard p-3 rounded-3 shadow-sm h-100">
+              <h4 class="h6 mb-2">Trial 1</h4>
+              <p class="small text-secondary">Replace this with notes about the attempt/scene setup.</p>
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <video class="video-16x9" controls preload="metadata" poster="./assets/thumbnails/lift1.jpg">
+                  <source src="./assets/videos/lift/lift1.mp4" type="video/mp4">
+                </video>
               </div>
             </div>
-
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="subcard p-3 rounded-3 shadow-sm h-100">
+              <h4 class="h6 mb-2">Trial 2</h4>
+              <p class="small text-secondary">Replace this with notes about the attempt/scene setup.</p>
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <video class="video-16x9" controls preload="metadata" poster="./assets/thumbnails/lift2.jpg">
+                  <source src="./assets/videos/lift/lift2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="subcard p-3 rounded-3 shadow-sm h-100">
+              <h4 class="h6 mb-2">Trial 3</h4>
+              <p class="small text-secondary">Replace this with notes about the attempt/scene setup.</p>
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <video class="video-16x9" controls preload="metadata" poster="./assets/thumbnails/lift3.jpg">
+                  <source src="./assets/videos/lift/lift3.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Move -->
+    <!-- ===== Move ===== -->
     <section class="py-5 border-top">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-10">
-            <h3 class="h4 mb-2">Move</h3>
-            <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
+        <h3 class="h4 mb-2">Move</h3>
+        <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
 
-            <div class="carousel-wrap mx-auto">
-              <div id="carousel-move" class="carousel slide"
-                   data-bs-ride="false" data-bs-interval="false"
-                   data-bs-touch="false" data-bs-keyboard="false" data-bs-wrap="true">
-                <div class="carousel-inner rounded-3 overflow-hidden">
-                  <div class="carousel-item active d-grid">
-                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/move1.jpg">
-                      <source src="./assets/videos/move/move1.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/move2.jpg">
-                      <source src="./assets/videos/move/move2.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/move3.jpg">
-                      <source src="./assets/videos/move/move3.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-move" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-move" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="subcard p-3 rounded-3 shadow-sm h-100">
+              <h4 class="h6 mb-2">Trial 1</h4>
+              <p class="small text-secondary">Replace this with notes about the attempt/scene setup.</p>
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <video class="video-16x9" controls preload="metadata" poster="./assets/thumbnails/move1.jpg">
+                  <source src="./assets/videos/move/move1.mp4" type="video/mp4">
+                </video>
               </div>
             </div>
-
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="subcard p-3 rounded-3 shadow-sm h-100">
+              <h4 class="h6 mb-2">Trial 2</h4>
+              <p class="small text-secondary">Replace this with notes about the attempt/scene setup.</p>
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <video class="video-16x9" controls preload="metadata" poster="./assets/thumbnails/move2.jpg">
+                  <source src="./assets/videos/move/move2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="subcard p-3 rounded-3 shadow-sm h-100">
+              <h4 class="h6 mb-2">Trial 3</h4>
+              <p class="small text-secondary">Replace this with notes about the attempt/scene setup.</p>
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <video class="video-16x9" controls preload="metadata" poster="./assets/thumbnails/move3.jpg">
+                  <source src="./assets/videos/move/move3.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Close the Pot -->
+    <!-- ===== Close the Pot ===== -->
     <section class="py-5 border-top">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-10">
-            <h3 class="h4 mb-2">Close the Pot</h3>
-            <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
+        <h3 class="h4 mb-2">Close the Pot</h3>
+        <p class="text-secondary mb-4">Short description for this task. You can edit this text later.</p>
 
-            <div class="carousel-wrap mx-auto">
-              <div id="carousel-pot" class="carousel slide"
-                   data-bs-ride="false" data-bs-interval="false"
-                   data-bs-touch="false" data-bs-keyboard="false" data-bs-wrap="true">
-                <div class="carousel-inner rounded-3 overflow-hidden">
-                  <div class="carousel-item active d-grid">
-                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/pot1.jpg">
-                      <source src="./assets/videos/close-the-pot/pot1.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/pot2.jpg">
-                      <source src="./assets/videos/close-the-pot/pot2.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="carousel-item d-grid">
-                    <video class="w-100 rounded-3" controls preload="metadata" poster="./assets/thumbnails/pot3.jpg">
-                      <source src="./assets/videos/close-the-pot/pot3.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pot" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-pot" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="subcard p-3 rounded-3 shadow-sm h-100">
+              <h4 class="h6 mb-2">Trial 1</h4>
+              <p class="small text-secondary">Replace this with notes about the attempt/scene setup.</p>
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <video class="video-16x9" controls preload="metadata" poster="./assets/thumbnails/pot1.jpg">
+                  <source src="./assets/videos/close-the-pot/pot1.mp4" type="video/mp4">
+                </video>
               </div>
             </div>
-
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="subcard p-3 rounded-3 shadow-sm h-100">
+              <h4 class="h6 mb-2">Trial 2</h4>
+              <p class="small text-secondary">Replace this with notes about the attempt/scene setup.</p>
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <video class="video-16x9" controls preload="metadata" poster="./assets/thumbnails/pot2.jpg">
+                  <source src="./assets/videos/close-the-pot/pot2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="subcard p-3 rounded-3 shadow-sm h-100">
+              <h4 class="h6 mb-2">Trial 3</h4>
+              <p class="small text-secondary">Replace this with notes about the attempt/scene setup.</p>
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <video class="video-16x9" controls preload="metadata" poster="./assets/thumbnails/pot3.jpg">
+                  <source src="./assets/videos/close-the-pot/pot3.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -249,16 +246,9 @@
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous">
-  </script>
+    crossorigin="anonymous"></script>
 
-  <!-- Ensure videos pause when changing slides (belt & suspenders) -->
   <script>
-    document.querySelectorAll('.carousel').forEach(carousel => {
-      carousel.addEventListener('slide.bs.carousel', () => {
-        carousel.querySelectorAll('video').forEach(v => v.pause());
-      });
-    });
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
