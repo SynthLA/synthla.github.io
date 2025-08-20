@@ -5,242 +5,293 @@
   <title>SynthLA: Zero-Shot Real-World Robot Control via a Synthetic-Data Language–Action Model</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Project page for SynthLA: Zero-Shot Real-World Robot Control via a Synthetic-Data Language–Action Model." />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Custom styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <h1 class="title">SynthLA</h1>
-      <p class="subtitle">Zero-Shot Real-World Robot Control via a Synthetic-Data Language–Action Model</p>
 
-      <div class="cta">
-        <!-- Update the href to your actual PDF path in the repo -->
-        <a class="btn" href="./assets/paper/SynthLA.pdf" target="_blank" rel="noopener">Read the Paper (PDF)</a>
-        <!-- Update the YouTube link to your playlist/channel/video -->
-        <a class="btn ghost" href="https://www.youtube.com/" target="_blank" rel="noopener">More Videos on YouTube</a>
+  <!-- Header -->
+  <header class="py-5 border-bottom bg-gradient">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-8">
+          <h1 class="display-5 fw-bold mb-2">SynthLA</h1>
+          <p class="lead text-secondary mb-4">
+            Zero-Shot Real-World Robot Control via a Synthetic-Data Language–Action Model
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <!-- Update to your actual PDF path -->
+            <a class="btn btn-primary btn-lg" href="./assets/paper/SynthLA.pdf" target="_blank" rel="noopener">
+              Read the Paper (PDF)
+            </a>
+            <!-- Update to your actual YouTube link -->
+            <a class="btn btn-outline-secondary btn-lg" href="https://www.youtube.com/" target="_blank" rel="noopener">
+              More Videos on YouTube
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
-  <main class="wrap">
-    <!-- Pick and Place -->
-    <section class="block" id="pick-and-place">
-      <div class="block-head">
-        <h2>Pick and Place</h2>
-        <div class="controls" aria-label="Pick and Place carousel controls">
-          <button class="nav prev" data-target="pick-and-place" aria-label="Previous video">‹</button>
-          <button class="nav next" data-target="pick-and-place" aria-label="Next video">›</button>
+  <!-- Fullscreen hero image with overlay text (edit the copy later) -->
+  <section class="hero-section position-relative">
+    <!-- Replace with your image path -->
+    <img src="./assets/hero/hero.jpg" class="hero-img" alt="SynthLA hero image">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <h2 class="display-6 fw-semibold">Edit this headline later</h2>
+          <p class="fs-5 text-light-50 mb-0">
+            Add a short paragraph describing the main contribution, setup, or results. Keep it to 1–2 lines for clarity.
+          </p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Pick and Place">
-        <div class="track" data-carousel="pick-and-place">
-          <!-- Replace sources with your actual files -->
-          <figure class="slide current">
-            <video controls preload="metadata" poster="./assets/thumbnails/pnp1.jpg">
-              <source src="./assets/videos/pick-and-place/pnp1.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <figcaption>Pick and place – trial 1</figcaption>
-          </figure>
+  <!-- 2x2 Sections -->
+  <main class="py-5">
+    <div class="container">
 
-          <figure class="slide">
-            <video controls preload="metadata" poster="./assets/thumbnails/pnp2.jpg">
-              <source src="./assets/videos/pick-and-place/pnp2.mp4" type="video/mp4">
-            </video>
-            <figcaption>Pick and place – trial 2</figcaption>
-          </figure>
-
-          <figure class="slide">
-            <video controls preload="metadata" poster="./assets/thumbnails/pnp3.jpg">
-              <source src="./assets/videos/pick-and-place/pnp3.mp4" type="video/mp4">
-            </video>
-            <figcaption>Pick and place – trial 3</figcaption>
-          </figure>
+      <div class="row g-4">
+        <!-- Pick and Place -->
+        <div class="col-12 col-md-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="h5 mb-3">Pick and Place</h3>
+              <div id="carousel-pnp" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel-pnp" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel-pnp" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel-pnp" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner rounded-3 overflow-hidden">
+                  <div class="carousel-item active">
+                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pnp1.jpg">
+                      <source src="./assets/videos/pick-and-place/pnp1.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="small">Pick &amp; Place — trial 1</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pnp2.jpg">
+                      <source src="./assets/videos/pick-and-place/pnp2.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="small">Pick &amp; Place — trial 2</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pnp3.jpg">
+                      <source src="./assets/videos/pick-and-place/pnp3.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="small">Pick &amp; Place — trial 3</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pnp" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-pnp" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="dots" data-dots="pick-and-place" aria-hidden="true"></div>
-      </div>
-    </section>
 
-    <!-- Lift -->
-    <section class="block" id="lift">
-      <div class="block-head">
-        <h2>Lift</h2>
-        <div class="controls" aria-label="Lift carousel controls">
-          <button class="nav prev" data-target="lift" aria-label="Previous video">‹</button>
-          <button class="nav next" data-target="lift" aria-label="Next video">›</button>
+        <!-- Lift -->
+        <div class="col-12 col-md-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="h5 mb-3">Lift</h3>
+              <div id="carousel-lift" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel-lift" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel-lift" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel-lift" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner rounded-3 overflow-hidden">
+                  <div class="carousel-item active">
+                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/lift1.jpg">
+                      <source src="./assets/videos/lift/lift1.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="small">Lift — trial 1</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/lift2.jpg">
+                      <source src="./assets/videos/lift/lift2.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="small">Lift — trial 2</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/lift3.jpg">
+                      <source src="./assets/videos/lift/lift3.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="small">Lift — trial 3</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-lift" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-lift" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Lift">
-        <div class="track" data-carousel="lift">
-          <figure class="slide current">
-            <video controls preload="metadata" poster="./assets/thumbnails/lift1.jpg">
-              <source src="./assets/videos/lift/lift1.mp4" type="video/mp4">
-            </video>
-            <figcaption>Lift – trial 1</figcaption>
-          </figure>
-          <figure class="slide">
-            <video controls preload="metadata" poster="./assets/thumbnails/lift2.jpg">
-              <source src="./assets/videos/lift/lift2.mp4" type="video/mp4">
-            </video>
-            <figcaption>Lift – trial 2</figcaption>
-          </figure>
-          <figure class="slide">
-            <video controls preload="metadata" poster="./assets/thumbnails/lift3.jpg">
-              <source src="./assets/videos/lift/lift3.mp4" type="video/mp4">
-            </video>
-            <figcaption>Lift – trial 3</figcaption>
-          </figure>
+        <!-- Move -->
+        <div class="col-12 col-md-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="h5 mb-3">Move</h3>
+              <div id="carousel-move" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel-move" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel-move" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel-move" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner rounded-3 overflow-hidden">
+                  <div class="carousel-item active">
+                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/move1.jpg">
+                      <source src="./assets/videos/move/move1.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="small">Move — trial 1</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/move2.jpg">
+                      <source src="./assets/videos/move/move2.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="small">Move — trial 2</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/move3.jpg">
+                      <source src="./assets/videos/move/move3.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="small">Move — trial 3</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-move" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-move" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="dots" data-dots="lift" aria-hidden="true"></div>
-      </div>
-    </section>
 
-    <!-- Move -->
-    <section class="block" id="move">
-      <div class="block-head">
-        <h2>Move</h2>
-        <div class="controls" aria-label="Move carousel controls">
-          <button class="nav prev" data-target="move" aria-label="Previous video">‹</button>
-          <button class="nav next" data-target="move" aria-label="Next video">›</button>
+        <!-- Close the Pot -->
+        <div class="col-12 col-md-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="h5 mb-3">Close the Pot</h3>
+              <div id="carousel-pot" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel-pot" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel-pot" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel-pot" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner rounded-3 overflow-hidden">
+                  <div class="carousel-item active">
+                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pot1.jpg">
+                      <source src="./assets/videos/close-the-pot/pot1.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="small">Close the Pot — trial 1</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pot2.jpg">
+                      <source src="./assets/videos/close-the-pot/pot2.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="small">Close the Pot — trial 2</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <video class="d-block w-100" autoplay muted loop playsinline preload="metadata" poster="./assets/thumbnails/pot3.jpg">
+                      <source src="./assets/videos/close-the-pot/pot3.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="small">Close the Pot — trial 3</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pot" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-pot" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Move">
-        <div class="track" data-carousel="move">
-          <figure class="slide current">
-            <video controls preload="metadata" poster="./assets/thumbnails/move1.jpg">
-              <source src="./assets/videos/move/move1.mp4" type="video/mp4">
-            </video>
-            <figcaption>Move – trial 1</figcaption>
-          </figure>
-          <figure class="slide">
-            <video controls preload="metadata" poster="./assets/thumbnails/move2.jpg">
-              <source src="./assets/videos/move/move2.mp4" type="video/mp4">
-            </video>
-            <figcaption>Move – trial 2</figcaption>
-          </figure>
-          <figure class="slide">
-            <video controls preload="metadata" poster="./assets/thumbnails/move3.jpg">
-              <source src="./assets/videos/move/move3.mp4" type="video/mp4">
-            </video>
-            <figcaption>Move – trial 3</figcaption>
-          </figure>
-        </div>
-        <div class="dots" data-dots="move" aria-hidden="true"></div>
-      </div>
-    </section>
+      </div><!-- /.row -->
 
-    <!-- Close the Pot -->
-    <section class="block" id="close-the-pot">
-      <div class="block-head">
-        <h2>Close the Pot</h2>
-        <div class="controls" aria-label="Close the Pot carousel controls">
-          <button class="nav prev" data-target="close-the-pot" aria-label="Previous video">‹</button>
-          <button class="nav next" data-target="close-the-pot" aria-label="Next video">›</button>
-        </div>
-      </div>
-
-      <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Close the Pot">
-        <div class="track" data-carousel="close-the-pot">
-          <figure class="slide current">
-            <video controls preload="metadata" poster="./assets/thumbnails/pot1.jpg">
-              <source src="./assets/videos/close-the-pot/pot1.mp4" type="video/mp4">
-            </video>
-            <figcaption>Close the pot – trial 1</figcaption>
-          </figure>
-          <figure class="slide">
-            <video controls preload="metadata" poster="./assets/thumbnails/pot2.jpg">
-              <source src="./assets/videos/close-the-pot/pot2.mp4" type="video/mp4">
-            </video>
-            <figcaption>Close the pot – trial 2</figcaption>
-          </figure>
-          <figure class="slide">
-            <video controls preload="metadata" poster="./assets/thumbnails/pot3.jpg">
-              <source src="./assets/videos/close-the-pot/pot3.mp4" type="video/mp4">
-            </video>
-            <figcaption>Close the pot – trial 3</figcaption>
-          </figure>
-        </div>
-        <div class="dots" data-dots="close-the-pot" aria-hidden="true"></div>
-      </div>
-    </section>
+    </div><!-- /.container -->
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <small>© <span id="year"></span> SynthLA</small>
+  <footer class="py-4 border-top">
+    <div class="container text-center text-secondary small">
+      © <span id="year"></span> SynthLA
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+  </script>
+
+  <!-- Small enhancement: pause other videos when slide changes -->
   <script>
-    // Minimal, dependency-free carousel logic (supports keyboard + swipe)
-    (function () {
-      const byId = id => document.getElementById(id);
-      const tracks = document.querySelectorAll(".track");
-
-      tracks.forEach(track => {
-        const carouselId = track.getAttribute("data-carousel");
-        const slides = Array.from(track.querySelectorAll(".slide"));
-        const dotsWrap = document.querySelector(`[data-dots="${carouselId}"]`);
-        let index = slides.findIndex(s => s.classList.contains("current"));
-        if (index < 0) index = 0;
-
-        // Build dots
-        slides.forEach((_, i) => {
-          const b = document.createElement("button");
-          b.className = "dot" + (i === index ? " active" : "");
-          b.setAttribute("aria-label", `Go to slide ${i + 1}`);
-          b.addEventListener("click", () => goTo(i));
-          dotsWrap.appendChild(b);
-        });
-
-        const dots = Array.from(dotsWrap.querySelectorAll(".dot"));
-
-        // Prev/Next
-        const prevBtn = document.querySelector(`.controls .prev[data-target="${carouselId}"]`);
-        const nextBtn = document.querySelector(`.controls .next[data-target="${carouselId}"]`);
-        prevBtn.addEventListener("click", () => goTo(index - 1));
-        nextBtn.addEventListener("click", () => goTo(index + 1));
-
-        // Keyboard
-        track.setAttribute("tabindex", "0");
-        track.addEventListener("keydown", (e) => {
-          if (e.key === "ArrowLeft") goTo(index - 1);
-          if (e.key === "ArrowRight") goTo(index + 1);
-        });
-
-        // Swipe (basic)
-        let startX = 0;
-        track.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; }, { passive: true });
-        track.addEventListener("touchend", (e) => {
-          const dx = e.changedTouches[0].clientX - startX;
-          if (Math.abs(dx) > 40) dx > 0 ? goTo(index - 1) : goTo(index + 1);
-        });
-
-        function goTo(i) {
-          const last = index;
-          index = (i + slides.length) % slides.length;
-
-          slides[last].classList.remove("current");
-          slides[index].classList.add("current");
-
-          dots[last].classList.remove("active");
-          dots[index].classList.add("active");
-
-          // Pause any playing video in the old slide
-          const oldVid = slides[last].querySelector("video");
-          if (oldVid) { oldVid.pause(); }
-
-          // Smooth scroll the track to the active slide
-          slides[index].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-        }
+    document.querySelectorAll('.carousel').forEach(carousel => {
+      carousel.addEventListener('slide.bs.carousel', (e) => {
+        // Pause all videos in the outgoing slide
+        const leaving = e.relatedTarget?.parentElement?.querySelector('.carousel-item.active');
+        (leaving || carousel).querySelectorAll('video').forEach(v => v.pause());
       });
+      carousel.addEventListener('slid.bs.carousel', (e) => {
+        // Ensure the current slide's video is playing
+        const active = carousel.querySelector('.carousel-item.active video');
+        if (active) active.play().catch(()=>{});
+      });
+    });
 
-      // Year
-      document.getElementById("year").textContent = new Date().getFullYear();
-    })();
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
