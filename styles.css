@@ -6,6 +6,7 @@
   --card: #141417;
   --border: #212125;
   --accent: #4b9cff;
+  --carousel-max: 720px; /* keep the same apparent width as before */
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,20 +30,14 @@ html, body {
   background: linear-gradient(180deg, rgba(75,156,255,.12), transparent 60%);
 }
 
-.card {
-  background: var(--card);
-  border-color: var(--border);
-}
-
 .lead { color: var(--muted) !important; }
 
+/* Buttons */
 .btn-primary {
   background-color: var(--accent);
   border-color: color-mix(in oklab, var(--accent), black 12%);
 }
-.btn-primary:hover {
-  filter: brightness(1.05);
-}
+.btn-primary:hover { filter: brightness(1.05); }
 .btn-outline-secondary {
   color: var(--fg);
   border-color: var(--border);
@@ -51,41 +46,45 @@ html, body {
   background: rgba(255,255,255,0.06);
 }
 
-/* Hero (fullscreen) */
-.hero-section {
-  position: relative;
-  height: 100vh;              /* fullscreen height */
-  min-height: 520px;          /* floor for small screens */
-  display: grid;
-  align-items: center;
-  isolation: isolate;
+/* Cards (only if you add any) */
+.card {
+  background: var(--card);
+  border-color: var(--border);
 }
-.hero-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: saturate(0.9) contrast(1.02);
-  z-index: -2;
-}
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.25));
-  z-index: -1;
-}
-.hero-content {
-  color: #fff;
-}
-.text-light-50 { color: rgba(255,255,255,.8); }
 
-/* Carousel media */
+/* Hero image should follow main body width */
+.hero-body-width {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* Centered carousel wrapper with fixed max width and 16:9 media */
+.carousel-wrap {
+  max-width: var(--carousel-max);
+  width: 100%;
+}
+
+/* Use a grid to ensure the video fills the slide cleanly */
+.carousel-item.d-grid {
+  display: grid !important;
+}
+
+/* Video sizing: keep consistent dimensions/aspect as before */
 .carousel-item video {
   background: #000;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
-/* Small polish */
+/* Polishing */
 footer { color: var(--muted); }
+
+/* Optional: reduce indicator size slightly */
+.carousel-indicators [data-bs-target] {
+  width: 8px; height: 8px; border-radius: 50%;
+}
